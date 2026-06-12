@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>新闻公告库检索 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.10</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>新闻公告库检索</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span
+          ><a href="news-search-portal.html" class="nav-active">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="page-body">
+          <h3 class="section-title">新闻公告库检索</h3>
+          <p>本库收录2007—2009年槐宁市114相关公告、新闻通稿及内部迁移文件。</p>
+          <div class="y2k-form">
+            <label for="news-search">标题关键词</label>
+            <div class="search-box">
+              <input id="news-search" type="text" placeholder="输入关键词" />
+              <button
+                class="y2k-btn primary"
+                type="button"
+                id="btn-news-search"
+              >
+                检索
+              </button>
+            </div>
+            <p class="fine-print">输入后按 Enter 或点「检索」。</p>
+          </div>
+          <div id="search-history" class="search-history" hidden>
+            <p class="history-label">历史检索关键词</p>
+            <div id="search-history-list" class="history-kw-list"></div>
+          </div>
+          <p>热门关键词：</p>
+          <div class="hot-keywords">
+            <button type="button" data-kw="停水">停水</button>
+            <button type="button" data-kw="迁移">迁移</button>
+          </div>
+          <div class="notice-box">
+            <p>最近更新：2009-10-17 00:17（异常时间戳）</p>
+          </div>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("10");
+    </script>
+  </body>
+</html>

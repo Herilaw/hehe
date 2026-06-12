@@ -1,0 +1,23 @@
+# Netlify 静态资源长期缓存（文件名不变时浏览器/CDN 可复用本地副本）
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# HTML 页面内容可能更新，使用较短缓存并允许重新验证
+/pages/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

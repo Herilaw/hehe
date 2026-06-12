@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>提交三项证明 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.28</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>提交三项证明</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="page-body">
+          <div data-if-flag="threeProofs">
+            <p class="terror-text">
+              培训完成。当前访客已具备完整接线认知。值班权限开放。
+            </p>
+            <p>（系统把您的反抗也解释成了入职流程。）</p>
+          </div>
+          <div data-unless-flag="threeProofs">
+            <form class="y2k-form" id="form-proofs">
+              <label><strong class="form-step-num">1.</strong> 人声证明</label
+              ><input name="ren" placeholder="请输入" />
+              <label><strong class="form-step-num">2.</strong> 旧钟证明</label
+              ><input name="zhong" placeholder="请输入" />
+              <label><strong class="form-step-num">3.</strong> 空线证明</label
+              ><input name="xian" placeholder="请输入" />
+              <button type="submit" class="y2k-btn primary">提交</button>
+            </form>
+          </div>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("28");
+    </script>
+  </body>
+</html>

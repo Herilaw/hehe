@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>系统冲突 | 明日回拨</title>
+  <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611">
+</head>
+<body>
+  <div id="crt-overlay"></div>
+  <div class="page-number" id="page-badge">P.36</div>
+  <main class="site-wrap">
+    <div class="page-frame">
+      <div class="page-header">
+        <h1>系统冲突</h1>
+      </div>
+      <div class="y2k-nav"><a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span><a href="misc-download-center.html" class="">下载中心</a><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a><span class="sep">|</span><a href="misc-contact-desk.html" class="">联系我们</a></div>
+      <div class="page-body">
+        <div class="notice-box error-panel">
+          <p class="terror-text">权限错误：人声无法证明值班人存在。</p>
+          <p class="terror-text">时间错误：明日无法确认。</p>
+          <p class="terror-text">来电错误：空线不构成呼叫。</p>
+          <p>明日值班记录生成失败。</p>
+          <hr>
+          <p>检测到真实未接来电：<strong>陈小满</strong>。是否继续断开空线？</p>
+          </div>
+        <p>
+          <button class="y2k-btn primary" id="btn-disconnect" type="button">继续断开</button>
+          <button class="y2k-btn danger" id="btn-accept-call" type="button">我来接听</button>
+        </p>
+        <div class="system-override" data-if-flag="hiddenEligible">
+          <label>系统覆写指令</label>
+          <input id="hidden-input" type="text" placeholder="请输入">
+          <button class="y2k-btn" id="btn-hidden" type="button">执行</button>
+        </div>
+      </div>
+      <div class="page-footer">
+        <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+        <span><a href="../index.html">访问入口</a> · <a href="legacy-site-home.html">旧站首页</a></span>
+      </div>
+    </div>
+  </main>
+  <div id="jumpscare-overlay" class="hidden"></div>
+  <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+  <script src="../js/utils.js?v=20250611"></script>
+  <script src="../js/storage.js?v=20250611"></script>
+  <script src="../js/puzzles.js?v=20250611"></script>
+  <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+  <script>Game.boot('36');</script>
+</body>
+</html>

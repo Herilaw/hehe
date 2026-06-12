@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>值班人员情况说明 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.13</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>值班人员情况说明</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="zero-callback-incident-report.html">事故通报</a> &gt; 值班人员说明
+        </div>
+        <div class="page-body">
+          <h3 class="section-title">附件二：值班人员情况说明.jpg</h3>
+          <div id="staff-img-wrap" class="doc-img-wrap">
+            <img
+              id="staff-img"
+              class="game-img wide-img inverted-view"
+              src="../assets/images/img_duty_staff_hidden_visitor.png"
+              data-normal="../assets/images/img_duty_staff_hidden_visitor.png"
+              data-scare="../assets/images/img_duty_staff_archived_jumpscare.jpg.png"
+              alt="值班人员情况说明扫描件"
+              loading="lazy"
+            />
+          </div>
+          <table class="y2k-table staff-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>姓名</th>
+                <th>工号</th>
+                <th>岗位</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>沈桥</td>
+                <td>HN-0017</td>
+                <td>夜班接线员</td>
+                <td>红圈标记</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>于慧</td>
+                <td>HN-0023</td>
+                <td>夜班接线员</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>马群</td>
+                <td>HN-0031</td>
+                <td>夜班接线员</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>刘蔓</td>
+                <td>HN-0042</td>
+                <td>夜班接线员</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>方远</td>
+                <td>HN-0058</td>
+                <td>夜班接线员</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>罗其</td>
+                <td>HN-0066</td>
+                <td>夜班接线员</td>
+                <td>—</td>
+              </tr>
+              <tr class="row-hidden">
+                <td>7</td>
+                <td class="black-bar">████████</td>
+                <td>—</td>
+                <td>—</td>
+                <td>手写：第七位无需填写</td>
+              </tr>
+            </tbody>
+          </table>
+          <div data-unless-flag="photoJumpscare">
+            <button class="y2k-btn" id="btn-photo-scare" type="button">
+              🔍 仔细查看照片（放大）
+            </button>
+          </div>
+          <p data-if-flag="photoJumpscare" class="terror-text">
+            请不要让照片里的人发现你在看。
+          </p>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("13");
+    </script>
+  </body>
+</html>

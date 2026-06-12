@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>留言回访查询 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.04</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>留言回访查询</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="nav-active">留言回访</a
+          ><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb"><a href="legacy-site-home.html">首页</a> &gt; 留言回访</div>
+        <div class="page-body">
+          <p class="lead">
+            欢迎使用槐宁市114旧版留言回访系统。本系统用于查询市民留言处理进度及补充说明。
+          </p>
+          <div class="y2k-form query-form">
+            <label for="q-id">留言编号</label>
+            <input
+              id="q-id"
+              type="text"
+              placeholder="HM-YYYYMMDD-0017"
+              disabled
+            />
+            <label for="q-name">称呼</label>
+            <input
+              id="q-name"
+              type="text"
+              placeholder="您尚未登记……"
+              disabled
+            />
+            <label for="q-phone">联系方式后三位</label>
+            <input id="q-phone" type="text" maxlength="3" disabled />
+            <button class="y2k-btn" disabled>查询</button>
+          </div>
+          <div class="notice-box warn-box">
+            <p>⚠ 系统提示：检测到未归档留言指向当前浏览器会话。</p>
+            <p>您没有留言编号，但搜索结果显示您有一条等待回拨的留言。</p>
+          </div>
+          <p class="action-line">
+            <a href="message-supplement-form.html" class="y2k-btn primary"
+              >没有留言编号？点击补充留言</a
+            >
+          </p>
+          <aside class="side-panel">
+            <h4>栏目说明</h4>
+            <p>
+              114留言回访承诺：夜间留言将于<strong>[[TOMORROW]]</strong>由值班员统一处理。
+            </p>
+            <p>本页面不验证身份——它默认您已经来过。</p>
+          </aside>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("04");
+    </script>
+  </body>
+</html>

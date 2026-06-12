@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>明日值班记录 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.08</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>明日值班记录</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="night-duty-hotline.html">夜间值班室</a> &gt; 明日值班记录
+        </div>
+        <div class="page-body">
+          <h3 class="section-title">明日值班记录 · 生成状态</h3>
+          <div class="status-panel">
+            <table class="y2k-table status-table">
+              <tr>
+                <td width="140">当前访客</td>
+                <td>
+                  <strong data-bind="PLAYER_NAME">[[PLAYER_NAME]]</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>当前身份</td>
+                <td>
+                  <span data-unless-flag="submittedMessage">访客</span
+                  ><span data-if-flag="submittedMessage">留言人</span>
+                </td>
+              </tr>
+              <tr>
+                <td>明日回拨时间</td>
+                <td class="status-future">[[TOMORROW]]</td>
+              </tr>
+              <tr>
+                <td>值班记录状态</td>
+                <td id="record-status">未生成</td>
+              </tr>
+              <tr>
+                <td>候选等级</td>
+                <td>— → 观察中</td>
+              </tr>
+            </table>
+          </div>
+          <div class="notice-box">
+            <h4>生成条件（满足任一即继续累积）</h4>
+            <ul class="check-list">
+              <li id="chk-night">☐ 阅读夜间值班说明</li>
+              <li id="chk-nocaller">☐ 查询无人来电说明</li>
+              <li id="chk-accident">☐ 查看零点回拨事故记录</li>
+              <li id="chk-training">☐ 完成岗前培训（后期激活）</li>
+            </ul>
+          </div>
+          <p class="status-line">系统备注：当前访客尚未登记。</p>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("08");
+    </script>
+  </body>
+</html>

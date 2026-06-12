@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>第七接线室后台登录 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.20</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>第七接线室后台登录</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb"><a href="clocktower-maintenance-order.html">检修单</a> &gt; 后台登录</div>
+        <div class="page-body login-page-body">
+          <p class="lead">第七接线室内部系统 · 非公开入口 · 访问将被记录</p>
+          <div class="login-panel">
+            <img
+              src="../assets/images/img_room7_login_bg.jpg.png"
+              alt=""
+              class="login-panel-bg"
+              aria-hidden="true"
+            />
+            <form class="y2k-form login-form" id="form-login">
+              <label class="login-label-row"
+                >值班编号
+                <span class="login-inline-icon-wrap" aria-hidden="true">
+                  <img
+                    src="../assets/images/icon.png"
+                    alt=""
+                    class="login-inline-icon"
+                  />
+                </span>
+              </label>
+              <input name="code" type="text" placeholder="请输入" />
+              <label>接线口令</label>
+              <input
+                name="pwd"
+                type="text"
+                placeholder="请输入"
+                autocomplete="off"
+              />
+              <button type="submit" class="y2k-btn primary">登录</button>
+            </form>
+          </div>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("20");
+    </script>
+  </body>
+</html>

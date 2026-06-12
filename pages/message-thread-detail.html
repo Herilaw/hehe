@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>留言详情：等待明日回拨 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.06</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>留言详情：等待明日回拨</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="visitor-message-board.html">留言回访</a> &gt; 留言详情
+        </div>
+        <div class="page-body">
+          <h3 class="section-title">留言详情</h3>
+          <table class="meta-table y2k-table">
+            <tr>
+              <td class="meta-k">留言编号</td>
+              <td>[[MSG_ID]]</td>
+            </tr>
+            <tr>
+              <td class="meta-k">留言人</td>
+              <td>[[PLAYER_NAME]]</td>
+            </tr>
+            <tr>
+              <td class="meta-k">提交时间</td>
+              <td>[[NOW]]</td>
+            </tr>
+            <tr>
+              <td class="meta-k">回拨时间</td>
+              <td>[[TOMORROW]]</td>
+            </tr>
+            <tr>
+              <td class="meta-k">状态</td>
+              <td><span class="status-future">已进入明日回拨队列</span></td>
+            </tr>
+          </table>
+          <table class="y2k-table log-table">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>操作</th>
+                <th>处理人</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[[NOW]]</td>
+                <td>留言接收</td>
+                <td>系统</td>
+                <td>自动归档</td>
+              </tr>
+              <tr>
+                <td>—</td>
+                <td>身份登记</td>
+                <td>系统</td>
+                <td>留言人：[[PLAYER_RAW]]</td>
+              </tr>
+              <tr>
+                <td>[[TOMORROW]]</td>
+                <td>等待回拨</td>
+                <td><a href="night-duty-hotline.html">夜间值班室</a></td>
+                <td>队列序号 0017</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="notice-box terror-box">
+            <p class="terror-text blink">回拨已提前送达。当前访客尚未登记。</p>
+          </div>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("06");
+    </script>
+  </body>
+</html>

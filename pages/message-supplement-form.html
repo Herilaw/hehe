@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>补充留言 | 明日回拨</title>
+  <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611">
+</head>
+<body>
+  <div id="crt-overlay"></div>
+  <div class="page-number" id="page-badge">P.05</div>
+  <main class="site-wrap">
+    <div class="page-frame">
+      <div class="page-header">
+        <h1>补充留言</h1>
+      </div>
+      <div class="y2k-nav"><a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span><a href="visitor-message-board.html" class="nav-active">留言回访</a><span class="sep">|</span><a href="misc-download-center.html" class="">下载中心</a><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a><span class="sep">|</span><a href="misc-contact-desk.html" class="">联系我们</a></div>
+      <div class="breadcrumb"><a href="visitor-message-board.html">留言回访</a> &gt; 补充留言</div>
+      <div class="page-body">
+        <p class="lead">请填写以下信息。带 <span class="req">*</span> 为必填项。提交后<strong>不可撤回</strong>——本系统不支持删除留言。</p>
+        <form class="y2k-form" id="form-message" data-unless-flag="submittedMessage">
+          <label for="msg-name">称呼 <span class="req">*</span></label>
+          <input id="msg-name" name="name" type="text" placeholder="便于回访的称呼" value="">
+          <label for="msg-body">留言内容</label>
+          <textarea id="msg-body" name="content" rows="4" placeholder="（可选）请描述您的诉求……"></textarea>
+          <label>是否需要回拨</label>
+          <p><input type="checkbox" checked disabled> 是 — 夜间留言默认需要回拨</p>
+          <p class="fine-print">夜间留言将由明日值班人员统一处理。提交即视为同意《夜间值班回访协议》。</p>
+          <button type="submit" class="y2k-btn primary">提交留言</button>
+        </form>
+        <div class="notice-box" data-if-flag="submittedMessage">
+          <p class="status-future">留言已接收。回拨时间：[[TOMORROW]]</p>
+        </div>
+      </div>
+      <div class="page-footer">
+        <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+        <span><a href="../index.html">访问入口</a> · <a href="legacy-site-home.html">旧站首页</a></span>
+      </div>
+    </div>
+  </main>
+  <div id="jumpscare-overlay" class="hidden"></div>
+  <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+  <script src="../js/utils.js?v=20250611"></script>
+  <script src="../js/storage.js?v=20250611"></script>
+  <script src="../js/puzzles.js?v=20250611"></script>
+  <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+  <script>Game.boot('05');</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="《明日回拨》——槐宁市114旧站异常访问事件">
+  <title>明日回拨 | 访问入口</title>
+  <link rel="stylesheet" href="css/y2k.css?v=20250611">
+  <script src="js/routes.js?v=20250611"></script>
+</head>
+<body class="landing-body">
+  <div id="crt-overlay"></div>
+  <div class="page-number landing-num">入口</div>
+  <main id="landing-wrap" class="site-wrap landing-wrap">
+    <div class="page-frame landing-page">
+      <div class="landing-hero">
+        <h1>《明日回拨》</h1>
+        <div class="tagline">槐宁市114旧站异常访问事件</div>
+        <div class="marquee-bar"><span>⚠ 镜像最后维护：2009-10-17　|　异常索引：[[TOMORROW]]　|　状态：等待访客登记　|　访问量：000114　|　</span></div>
+        <div class="warning">
+          您即将访问槐宁市114便民服务网<strong>旧版镜像</strong>。<br>
+          该站点仍在处理「明天才会打来的电话」。<br>
+          <span class="blink">如收到回拨通知，请勿保持可联系状态。</span>
+        </div>
+      </div>
+      <div class="visitor-counter">访问量：000114　|　在线：1　|　镜像 v2009.1017</div>
+      <div class="landing-actions">
+        <a href="pages/seek-entry-results.html" class="y2k-btn primary" id="btn-new-game">开始新的访问</a>
+        <button class="y2k-btn" id="btn-continue" type="button">继续上次进度</button>
+        <button class="y2k-btn" id="btn-toggle-index" type="button" style="display:none">查看已访问页面</button>
+        <div class="page-index" id="page-index" style="display:none">
+          <h3>已访问页面索引</h3>
+          <div class="page-index-grid" id="page-index-grid"></div>
+        </div>
+        <p class="save-info" id="save-info"></p>
+      </div>
+      <div class="page-footer">
+        <span>seek.page 网页检索 · 非官方镜像托管</span>
+        <button type="button" class="landing-intro-reopen" id="btn-reopen-intro">重新查看玩家须知</button>
+      </div>
+    </div>
+  </main>
+  <div id="landing-intro-overlay" class="landing-intro-overlay hidden" style="position:fixed;inset:0;z-index:10050;background:rgba(0,0,8,.82)">
+    <div id="landing-intro-content" class="landing-intro-content"></div>
+  </div>
+  <script src="js/utils.js?v=20250611"></script>
+  <script src="js/storage.js?v=20250611"></script>
+  <script src="js/core.js?v=20250611"></script>
+  <script>Landing.init();</script>
+</body>
+</html>

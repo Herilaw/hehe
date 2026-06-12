@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>人声样本库 | 明日回拨</title>
+    <script src="../js/routes.js?v=20250611"></script>
+  <script src="../js/nav-lock-head.js?v=20250611"></script>
+  <link rel="stylesheet" href="../css/y2k.css?v=20250611" />
+  </head>
+  <body>
+    <div id="crt-overlay"></div>
+    <div class="page-number" id="page-badge">P.26A</div>
+    <main class="site-wrap">
+      <div class="page-frame">
+        <div class="page-header">
+          <h1>人声样本库</h1>
+        </div>
+        <div class="y2k-nav">
+          <a href="legacy-site-home.html" class="">首页</a><span class="sep">|</span
+          ><a href="shutdown-notice-1017.html" class="">新闻公告</a><span class="sep">|</span
+          ><a href="night-duty-hotline.html" class="">便民热线</a><span class="sep">|</span
+          ><a href="visitor-message-board.html" class="">留言回访</a><span class="sep">|</span
+          ><a href="misc-download-center.html" class="">下载中心</a
+          ><span class="sep">|</span><a href="misc-lost-and-found.html" class="">失物招领</a
+          ><span class="sep">|</span><a href="news-search-portal.html" class="">站内搜索</a
+          ><span class="sep">|</span
+          ><a href="misc-contact-desk.html" class="">联系我们</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="ticket-chen-017041.html">陈小满工单</a> &gt; 人声培训
+        </div>
+        <div class="page-body">
+          <ul class="file-list">
+            <li>📄 沈桥_您好.wav</li>
+            <li>📄 沈桥_请稍等.wav</li>
+            <li>📄 沈桥_已记录.wav</li>
+            <li class="terror-text">📄 沈桥_沉默.wav ← 异常</li>
+          </ul>
+          <button class="y2k-btn" id="btn-silence" type="button">
+            播放沉默样本
+          </button>
+          <div id="silence-wave-wrap" class="silence-wave-wrap" hidden>
+            <div class="silence-wave-head">
+              <span class="silence-wave-fname">沈桥_沉默.wav</span>
+              <span class="silence-wave-time" id="silence-wave-time">00:00</span>
+            </div>
+            <div class="silence-wave-controls">
+              <label for="silence-wave-speed">倍速</label>
+              <input
+                type="range"
+                id="silence-wave-speed"
+                min="0.5"
+                max="3"
+                step="0.25"
+                value="1"
+              />
+              <span id="silence-wave-speed-val">1.0×</span>
+            </div>
+            <div class="silence-wave-stage">
+              <canvas id="silence-wave-canvas" class="silence-wave-canvas"></canvas>
+            </div>
+            <p class="silence-wave-caption">波形分析 · 00:00—00:17 · 单声道</p>
+          </div>
+          <div class="y2k-form" style="margin-top: 16px" data-unless-token="ren">
+            <label>输入结果</label>
+            <input id="voice-kw" type="text" autocomplete="off" />
+            <button class="y2k-btn" id="btn-voice-kw" type="button">
+              提交
+            </button>
+          </div>
+          <p data-if-token="ren" class="success-line">验证通过。</p>
+          <p data-if-token="ren" class="keyword-hint">keyword: <strong>you</strong></p>
+        </div>
+        <div class="page-footer">
+          <span class="footer-site">槐宁市114便民服务网 · 旧版镜像</span>
+          <span
+            ><a href="../index.html">访问入口</a> ·
+            <a href="legacy-site-home.html">旧站首页</a></span
+          >
+        </div>
+      </div>
+    </main>
+    <div id="jumpscare-overlay" class="hidden"></div>
+    <div id="modal-overlay" class="hidden"><div id="modal-content"></div></div>
+    <script src="../js/utils.js?v=20250611"></script>
+    <script src="../js/storage.js?v=20250611"></script>
+    <script src="../js/puzzles.js?v=20250611"></script>
+    <script src="../js/images.js?v=20250611"></script>
+  <script src="../js/core.js?v=20250611"></script>
+    <script>
+      Game.boot("26a");
+    </script>
+  </body>
+</html>
